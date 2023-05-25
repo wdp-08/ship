@@ -1,15 +1,15 @@
-let n = 2;
-let string = "";
+let baris = 3;
+let star = "";
 
-for (let i = 1; i <= n; i++) {
+for (let i = 1; i <= baris; i++) {
  
-  for (let j = 1; j <= n - i; j++) {
-    string += " "; // ini untuk ngatur jaraknya membuat kosong
+  for (let j = 1; j <= baris - i; j++) {
+    star += " "; // ini untuk ngatur jaraknya membuat kosong
   }
   
   for (let k = 0; k < 2 * i - 1; k++) {
-    string += "*";
+    star += "*";
   }
-  string += "\n";
+  star += "\n";
 }
-console.log(string);
+console.log(star);

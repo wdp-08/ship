@@ -1,16 +1,27 @@
-let n = 2;
-let string = "";
+let baris = 2;
+let star = "";
+let star1 = "";
 
+for (let i = 1; i <= baris; i++) {
 
-for (let i = 1; i <= n; i++) {
-
-    for (let j = 1; j <= n * i - 1; j++) {
-        string += " "; // ini untuk ngatur jaraknya membuat kosong
+    for (let j = 0; j <= baris - i; j++) {
+        star += " "; // ini untuk ngatur jaraknya membuat kosong
     }
+
+    for (let j = 0; j <= baris * i; j++) {
+   
+        star1 += " "; // ini untuk ngatur jaraknya membuat kosong
+    }
+
+    for (let k = 0; k < 2 * i - 1; k++) {
+        star += "*";
+    }
+    star += "\n";
 
     for (let l = 10; l > 4 * i - 2; l--) {
-        string += "*";
+        star1 += "*";
     }
-    string += "\n";
+    star1 += "\n";
 }
-console.log(string);
+console.log(star);
+console.log(star1);
